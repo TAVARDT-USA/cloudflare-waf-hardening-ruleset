@@ -1,0 +1,38 @@
+{
+  "name": "TAVARDT Cloudflare WAF Hardening Ruleset",
+  "description": "Production edge firewall ruleset for perimeter defense, CMS protection, sensitive file blocking, and rate limiting.",
+  "kind": "zone",
+  "phase": "http_request_firewall_custom",
+  "rules": [
+    {
+      "action": "block",
+      "description": "TAVARDT-WAF-01: Block access to environment variables, git repositories, and database dumps",
+      "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/config.json\" or http.request.uri.path contains \"/composer.json\" or http.request.uri.path contains \"/package.json\" or http.request.uri.path contains \".sql\" or http.request.uri.path contains \".dump\")",
+      "enabled": true
+    },
+    {
+      "action": "block",
+      "description": "TAVARDT-WAF-02: Block automated security scanners and exploit probes",
+      "expression": "(http.user_agent contains \"nikto\" or http.user_agent contains \"sqlmap\" or http.user_agent contains \"acunetix\" or http.user_agent contains \"masscan\" or http.user_agent contains \"zgrab\" or http.user_agent contains \"nmap\" or http.user_agent contains \"dirbuster\" or http.user_agent contains \"gobuster\")",
+      "enabled": true
+    },
+    {
+      "action": "block",
+      "description": "TAVARDT-WAF-03: Block WordPress XML-RPC abuse and trackbacks",
+      "expression": "(http.request.uri.path contains \"/xmlrpc.php\" or http.request.uri.path contains \"/wp-trackback.php\")",
+      "enabled": true
+    },
+    {
+      "action": "block",
+      "description": "TAVARDT-WAF-04: Block dangerous or non-standard HTTP methods",
+      "expression": "(http.request.method in {\"TRACE\" \"TRACK\" \"DEBUG\"})",
+      "enabled": true
+    },
+    {
+      "action": "challenge",
+      "description": "TAVARDT-WAF-05: Managed challenge for sensitive administrative endpoints",
+      "expression": "(http.request.uri.path contains \"/wp-login.php\" or http.request.uri.path contains \"/administrator\" or http.request.uri.path contains \"/admin/login\") and not ip.geoip.asnum in {13335}",
+      "enabled": true
+    }
+  ]
+}
