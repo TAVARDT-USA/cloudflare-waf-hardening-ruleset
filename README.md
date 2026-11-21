@@ -9,6 +9,21 @@ Production-grade Cloudflare WAF custom ruleset, bot defense, and edge security b
 
 Engineered and maintained by the infrastructure and perimeter security team at **[TAVARDT USA](https://ag.tavardt.com/cybersecurity/)**.
 
+> [!IMPORTANT]
+> **Universal & Stack-Agnostic Architecture:** This repository is **not exclusive to WordPress**. It is engineered to safeguard **modern REST APIs, microservices, frontend applications (Next.js, React, Vue), and enterprise backends (Node.js, Python/Django/FastAPI, Go, Laravel, Java)**. Blocking legacy CMS probes operates as an **active edge hygiene layer**, dropping automated botnet noise directly at Cloudflare edge data centers (< 1ms) before malicious requests can consume TCP connections, memory, or CPU on your origin servers.
+
+---
+
+### Multi-Stack Defense Matrix
+
+| Defense Layer | Mitigated Vectors | Protected Applications & Stacks |
+| :--- | :--- | :--- |
+| **Credential Isolation** | Immediate block for `.env`, `.git`, `.sql`, `package.json`, `composer.json` | **APIs, Next.js, Node.js, Python, Go, Laravel, React** |
+| **Reconnaissance Suppression** | Block Nikto, SQLMap, Acunetix, Masscan, Gobuster, Nmap probes | **Any public web application, microservice, or API** |
+| **HTTP Verb Sanitization** | Rejection of non-essential debug verbs (`TRACE`, `TRACK`, `DEBUG`) | **Production RESTful APIs and API Gateways** |
+| **Privileged Route Gating** | Managed challenges on sensitive administration paths (`/admin`, `/login`) | **Internal dashboards, administration portals, web ERPs** |
+| **Zero-Noise Edge Hygiene** | Edge drop for blind legacy CMS scans (`/xmlrpc.php`, trackbacks) | **Immediate origin CPU and connection overhead relief** |
+
 ---
 
 ## 1. Edge Architecture Overview
