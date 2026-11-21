@@ -78,7 +78,7 @@ terraform apply -var="zone_id=YOUR_ZONE_ID"
 If your organization requires comprehensive penetration testing, SOC 2 compliance verification, autonomous agent safeguarding, or round-the-clock incident engineering:
 
 * **Corporate Portal:** [TAVARDT USA](https://ag.tavardt.com/cybersecurity/)
-* **Direct Technical Advisory:** [Schedule Engineering Consultation](https://ag.tavardt.com/contact/)
+* **Direct Technical Advisory:** [Contact Engineering Team](https://ag.tavardt.com/contact/)
 
 ---
 
