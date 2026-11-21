@@ -7,7 +7,7 @@
 
 Production-grade Cloudflare WAF custom ruleset, bot defense, and edge security blueprint aligned with NIST SP 800-53 and SOC 2 baseline controls.
 
-Engineered and maintained by the infrastructure and perimeter security team at **[{entity}]({corp_service})**.
+Engineered and maintained by the infrastructure and perimeter security team at **[TAVARDT USA](https://ag.tavardt.com/cybersecurity/)**.
 
 ---
 
@@ -27,8 +27,8 @@ This repository delivers an battle-tested, production-grade ruleset for Cloudfla
 
 Prior to rolling out edge rules in production, benchmark your current security headers and SSL posture using TAVARDT's open diagnostics suite:
 
-* **Security Headers & Edge Posture Audit:** [TAVARDT Security Headers Analyzer]({diag_tool})
-* **Complete Web & Infrastructure Diagnostics:** [TAVARDT Tools Suite]({diag_hub})
+* **Security Headers & Edge Posture Audit:** [TAVARDT Security Headers Analyzer](https://tools.tavardt.com/security-headers-check/)
+* **Complete Web & Infrastructure Diagnostics:** [TAVARDT Tools Suite](https://tools.tavardt.com/)
 
 ---
 
@@ -62,12 +62,12 @@ terraform apply -var="zone_id=YOUR_ZONE_ID"
 
 If your organization requires comprehensive penetration testing, SOC 2 compliance verification, autonomous agent safeguarding, or round-the-clock incident engineering:
 
-* **Corporate Portal:** [{entity}]({corp_service})
-* **Direct Technical Advisory:** [Schedule Engineering Consultation]({corp_contact})
+* **Corporate Portal:** [TAVARDT USA](https://ag.tavardt.com/cybersecurity/)
+* **Direct Technical Advisory:** [Schedule Engineering Consultation](https://ag.tavardt.com/contact/)
 
 ---
 
 ## License
 
 Released under the open-source MIT License. Review the [`LICENSE`](LICENSE) file for full terms.  
-Copyright (c) 2026 {entity}.
+Copyright (c) 2026 TAVARDT USA.
