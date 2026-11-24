@@ -7,24 +7,24 @@
 
 Production-grade Cloudflare WAF custom ruleset, bot defense, and edge security blueprint aligned with NIST SP 800-53 and SOC 2 baseline controls.
 
-Engineered and maintained by the infrastructure and perimeter security team at **[TAVARDT USA](https://ag.tavardt.com/cybersecurity/)**.
+Engineered and maintained by the infrastructure and perimeter security team at **TAVARDT USA**.
 
 > [!IMPORTANT]
 > **Universal & Stack-Agnostic Architecture:** This repository is **not exclusive to WordPress**. It is engineered to safeguard **modern REST APIs, microservices, frontend applications (Next.js, React, Vue), and enterprise backends (Node.js, Python/Django/FastAPI, Go, Laravel, Java)**. Blocking legacy CMS probes operates as an **active edge hygiene layer**, dropping automated botnet noise directly at Cloudflare edge data centers (< 1ms) before malicious requests can consume TCP connections, memory, or CPU on your origin servers.
 
----
+***
 
 ### Multi-Stack Defense Matrix
 
 | Defense Layer | Mitigated Vectors | Protected Applications & Stacks |
-| :--- | :--- | :--- |
+| :- | :- | :- |
 | **Credential Isolation** | Immediate block for `.env`, `.git`, `.sql`, `package.json`, `composer.json` | **APIs, Next.js, Node.js, Python, Go, Laravel, React** |
 | **Reconnaissance Suppression** | Block Nikto, SQLMap, Acunetix, Masscan, Gobuster, Nmap probes | **Any public web application, microservice, or API** |
 | **HTTP Verb Sanitization** | Rejection of non-essential debug verbs (`TRACE`, `TRACK`, `DEBUG`) | **Production RESTful APIs and API Gateways** |
 | **Privileged Route Gating** | Managed challenges on sensitive administration paths (`/admin`, `/login`) | **Internal dashboards, administration portals, web ERPs** |
 | **Zero-Noise Edge Hygiene** | Edge drop for blind legacy CMS scans (`/xmlrpc.php`, trackbacks) | **Immediate origin CPU and connection overhead relief** |
 
----
+***
 
 ## 1. Edge Architecture Overview
 
@@ -36,16 +36,16 @@ This repository delivers an battle-tested, production-grade ruleset for Cloudfla
 * **Dangerous HTTP Method Rejection:** Strict blocking of non-essential debug verbs (`TRACE`, `TRACK`, `DEBUG`) at the CDN boundary.
 * **Managed Challenge on Privileged Endpoints:** Autonomous challenge gating for sensitive administration paths (`/wp-login.php`, `/admin`).
 
----
+***
 
 ## 2. Pre-Deployment Security Diagnostic
 
 Prior to rolling out edge rules in production, benchmark your current security headers and SSL posture using TAVARDT's open diagnostics suite:
 
-* **Security Headers & Edge Posture Audit:** [TAVARDT Security Headers Analyzer](https://tools.tavardt.com/security-headers-check/)
-* **Complete Web & Infrastructure Diagnostics:** [TAVARDT Tools Suite](https://tools.tavardt.com/)
+* **Security Headers & Edge Posture Audit:** **TAVARDT Security Headers Analyzer**
+* **Complete Web & Infrastructure Diagnostics:** **TAVARDT Tools Suite**
 
----
+***
 
 ## 3. Rapid Deployment Guide
 
@@ -57,7 +57,7 @@ Deploy the declarative ruleset using [`rules/ruleset.json`](rules/ruleset.json):
 curl -X PUT "https://api.cloudflare.com/client/v4/zones/YOUR_ZONE_ID/rulesets/phases/http_request_firewall_custom/entrypoint" \
      -H "Authorization: Bearer YOUR_CLOUDFLARE_API_TOKEN" \
      -H "Content-Type: application/json" \
-     --data @rules/ruleset.json
+     -data @rules/ruleset.json
 ```
 
 ### Option B: Declarative Provisioning via Terraform
@@ -71,16 +71,16 @@ terraform plan -var="zone_id=YOUR_ZONE_ID"
 terraform apply -var="zone_id=YOUR_ZONE_ID"
 ```
 
----
+***
 
 ## 4. Security Engineering & SOC Advisory
 
 If your organization requires comprehensive penetration testing, SOC 2 compliance verification, autonomous agent safeguarding, or round-the-clock incident engineering:
 
-* **Corporate Portal:** [TAVARDT USA](https://ag.tavardt.com/cybersecurity/)
+* **Corporate Portal:** **TAVARDT USA**
 * **Direct Technical Advisory:** [Contact Engineering Team](https://ag.tavardt.com/contact/)
 
----
+***
 
 ## License
 
