@@ -7,7 +7,7 @@
 
 Production-grade Cloudflare WAF custom ruleset, bot defense, and edge security blueprint aligned with NIST SP 800-53 and SOC 2 baseline controls.
 
-Engineered and maintained by the infrastructure and perimeter security team at **TAVARDT USA**.
+Engineered and maintained by the infrastructure and perimeter security team at **TAVARDT**.
 
 > [!IMPORTANT]
 > **Universal & Stack-Agnostic Architecture:** This repository is **not exclusive to WordPress**. It is engineered to safeguard **modern REST APIs, microservices, frontend applications (Next.js, React, Vue), and enterprise backends (Node.js, Python/Django/FastAPI, Go, Laravel, Java)**. Blocking legacy CMS probes operates as an **active edge hygiene layer**, dropping automated botnet noise directly at Cloudflare edge data centers (< 1ms) before malicious requests can consume TCP connections, memory, or CPU on your origin servers.
@@ -77,7 +77,7 @@ terraform apply -var="zone_id=YOUR_ZONE_ID"
 
 If your organization requires comprehensive penetration testing, SOC 2 compliance verification, autonomous agent safeguarding, or round-the-clock incident engineering:
 
-* **Corporate Portal:** **TAVARDT USA**
+* **Corporate Portal:** **TAVARDT**
 * **Direct Technical Advisory:** [Contact Engineering Team](https://ag.tavardt.com/contact/)
 
 ***
@@ -85,4 +85,8 @@ If your organization requires comprehensive penetration testing, SOC 2 complianc
 ## License
 
 Released under the open-source MIT License. Review the [`LICENSE`](LICENSE) file for full terms.  
-Copyright (c) 2026 TAVARDT.
+Copyright
+
+***
+
+© 2026 TAVARDT. All rights reserved.
