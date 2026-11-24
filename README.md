@@ -1,4 +1,4 @@
-# Cloudflare WAF Hardening Ruleset & Edge Security Blueprint | TAVARDT USA
+# Cloudflare WAF Hardening Ruleset & Edge Security Blueprint
 
 [![Licence MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Cloudflare WAF](https://img.shields.io/badge/Cloudflare-WAF%20Hardened-F38020.svg?logo=cloudflare)](https://cloudflare.com)
@@ -85,4 +85,4 @@ If your organization requires comprehensive penetration testing, SOC 2 complianc
 ## License
 
 Released under the open-source MIT License. Review the [`LICENSE`](LICENSE) file for full terms.  
-Copyright (c) 2026 TAVARDT USA.
+Copyright (c) 2026 TAVARDT.
