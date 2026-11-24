@@ -4,6 +4,7 @@
 [![Cloudflare WAF](https://img.shields.io/badge/Cloudflare-WAF%20Hardened-F38020.svg?logo=cloudflare)](https://cloudflare.com)
 [![Language](https://img.shields.io/badge/Language-English%20(US)-green.svg)](README.md)
 [![Diagnostics Suite](https://img.shields.io/badge/TAVARDT-Diagnostics-5b3cf5.svg)](https://tools.tavardt.com/security-headers-check/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Production-grade Cloudflare WAF custom ruleset, bot defense, and edge security blueprint aligned with NIST SP 800-53 and SOC 2 baseline controls.
 
@@ -79,6 +80,15 @@ If your organization requires comprehensive penetration testing, SOC 2 complianc
 
 * **Corporate Portal:** **TAVARDT**
 * **Direct Technical Advisory:** [Contact Engineering Team](https://ag.tavardt.com/contact/)
+
+***
+
+## Governance and Sovereignty
+
+* **Sovereign Unit**: [TAVARDT United States](https://ag.tavardt.com/us/) (`TAVARDT-USA`)
+* **Core Standards**: [00-core Governance](https://github.com/TAVARDT-USA/00-core)
+* **Diagnostic Portal**: [TAVARDT US Diagnostic Suite](https://tools.tavardt.com/us/)
+* **Enterprise Security**: [TAVARDT US Cybersecurity](https://ag.tavardt.com/us/cybersecurity/)
 
 ***
 
