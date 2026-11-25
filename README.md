@@ -1,14 +1,10 @@
 # Cloudflare WAF Hardening Ruleset & Edge Security Blueprint
 
-[![Licence MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Cloudflare WAF](https://img.shields.io/badge/Cloudflare-WAF%20Hardened-F38020.svg?logo=cloudflare)](https://cloudflare.com)
-[![Language](https://img.shields.io/badge/Language-English%20(US)-green.svg)](README.md)
 [![Diagnostics Suite](https://img.shields.io/badge/TAVARDT-Diagnostics-5b3cf5.svg)](https://tools.tavardt.com/security-headers-check/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Production-grade Cloudflare WAF custom ruleset, bot defense, and edge security blueprint aligned with NIST SP 800-53 and SOC 2 baseline controls.
-
-Engineered and maintained by the infrastructure and perimeter security team at **TAVARDT**.
 
 > [!IMPORTANT]
 > **Universal & Stack-Agnostic Architecture:** This repository is **not exclusive to WordPress**. It is engineered to safeguard **modern REST APIs, microservices, frontend applications (Next.js, React, Vue), and enterprise backends (Node.js, Python/Django/FastAPI, Go, Laravel, Java)**. Blocking legacy CMS probes operates as an **active edge hygiene layer**, dropping automated botnet noise directly at Cloudflare edge data centers (< 1ms) before malicious requests can consume TCP connections, memory, or CPU on your origin servers.
@@ -74,16 +70,7 @@ terraform apply -var="zone_id=YOUR_ZONE_ID"
 
 ***
 
-## 4. Security Engineering & SOC Advisory
-
-If your organization requires comprehensive penetration testing, SOC 2 compliance verification, autonomous agent safeguarding, or round-the-clock incident engineering:
-
-* **Corporate Portal:** **TAVARDT**
-* **Direct Technical Advisory:** [Contact Engineering Team](https://ag.tavardt.com/contact/)
-
-***
-
-## Useful Links
+## 4. Useful Links
 
 * **Corporate Portal:** https://ag.tavardt.com/
 * **Diagnostic Suite:** https://tools.tavardt.com/
@@ -93,7 +80,7 @@ If your organization requires comprehensive penetration testing, SOC 2 complianc
 
 ### License
 
-Released under the open-source MIT License. Review the [`LICENSE`](LICENSE) file for full terms.
+Released under the open-source MIT License.
 
 ***
 
