@@ -91,10 +91,9 @@ If your organization requires comprehensive penetration testing, SOC 2 complianc
 
 ***
 
-## License
+### License
 
-Released under the open-source MIT License. Review the [`LICENSE`](LICENSE) file for full terms.  
-Copyright
+Released under the open-source MIT License. Review the [`LICENSE`](LICENSE) file for full terms.
 
 ***
 
